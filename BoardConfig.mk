@@ -14,6 +14,9 @@ DEVICE_PATH := device/oneplus/astonc
 # Assert
 TARGET_OTA_ASSERT_DEVICE := OP5CF9L1
 
+# Charging
+TARGET_CHARGE_RATE_MULTIPLIER := 1000
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
