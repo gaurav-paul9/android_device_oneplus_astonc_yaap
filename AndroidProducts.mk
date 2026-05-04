@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_astonc.mk
+    $(LOCAL_DIR)/yaap_astonc.mk

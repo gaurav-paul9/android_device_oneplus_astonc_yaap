@@ -1,5 +1,6 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# Copyright (C) 2021-2026 The LineageOS Project
+#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -10,10 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from astonc device
 $(call inherit-product, device/oneplus/astonc/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_astonc
+# YAAP specific flags
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := yaap_astonc
 PRODUCT_DEVICE := astonc
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -28,3 +34,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=PJE110 \
     SystemDevice=OP5CF9L1 \
     SystemName=PJE110
+    
