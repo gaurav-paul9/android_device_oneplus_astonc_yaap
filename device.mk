@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
 
+$(call soong_config_set,qtidisplay,bitclk_rate_permissive,true)
+$(call soong_config_set,qtidisplay,frame_rate_category_high,120)
+$(call soong_config_set,qtidisplay,frame_rate_category_min,10)
+$(call soong_config_set,qtidisplay,arr_use_oplus_ltpo_rates,true)
 $(call soong_config_set_bool,qtidisplay,pxlw_hw_iris7,true)
 
 # IR
