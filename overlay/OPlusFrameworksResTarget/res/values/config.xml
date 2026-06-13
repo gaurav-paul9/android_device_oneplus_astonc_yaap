@@ -246,7 +246,7 @@
          than this threshold, it is applied. See the config_screenThresholdLevels description for
          how the constraint value is chosen. -->
     <integer-array name="config_screenBrighteningThresholds">
-        <item>50</item>   <!-- 0.5% minimum nits change to apply -->
+        <item>100</item>   <!-- 1% minimum nits change to apply -->
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
