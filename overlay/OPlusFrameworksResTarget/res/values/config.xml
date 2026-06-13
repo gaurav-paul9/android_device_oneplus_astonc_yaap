@@ -9,7 +9,7 @@
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">4000</integer>
+    <integer name="config_brightness_ramp_rate_fast">400</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
     <integer name="config_brightness_ramp_rate_slow">50</integer>
@@ -246,7 +246,7 @@
          than this threshold, it is applied. See the config_screenThresholdLevels description for
          how the constraint value is chosen. -->
     <integer-array name="config_screenBrighteningThresholds">
-        <item>100</item>   <!-- 1% minimum nits change to apply -->
+        <item>50</item>   <!-- 0.5% minimum nits change to apply -->
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
